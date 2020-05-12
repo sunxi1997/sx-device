@@ -1,3 +1,11 @@
+/**
+ * @version 1.0.0
+ *
+ * @author sunxi1997
+ *
+ * @description 判断设备类型
+ */
+
 const {userAgent: UA} = navigator;
 
 const UA_L = UA.toLowerCase();
