@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+
+<script type="module" src="index.js">
+
+
+</script>
+
+<script type="module">
+  import Device from "./index.js";
+
+  console.table({
+    ' 是否为  IE内核': Device.trident,
+    ' 是否为  opera内核': Device.presto,
+    ' 是否为  iPad': Device.iPad,
+    ' 是否为  iPhone或者QQHD浏览器': Device.iPhone,
+    ' 是否为  苹果、谷歌内核': Device.webKit,
+    ' 是否为  web应用程序，没有头部与底部': Device.webApp,
+    ' 是否为  移动终端': Device.mobile,
+    ' 是否为  ios终端': Device.ios,
+    ' 是否为  android终端或uc浏览器': Device.android,
+    ' 是否为  火狐内核': Device.gecko,
+    ' 是否为  微信环境': Device.wechat,
+  })
+
+</script>
+
+
+</body>
+</html>
